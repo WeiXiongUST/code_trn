@@ -9,7 +9,7 @@ export NCCL_IB_DISABLE=1
 export NCCL_IBEXT_DISABLE=1
 
 accelerate launch -m lm_eval --model hf \
-    --model_args pretrained=$1,dtype=bfloat16 \
+    --model_args pretrained=$1,dtype=bfloat16,tokenizer="pxyyy/llama3-8B-with-chat-template" \
     --tasks mmlu \
     --num_fewshot 5 \
     --batch_size 4 \
@@ -17,7 +17,7 @@ accelerate launch -m lm_eval --model hf \
     --apply_chat_template
 
 accelerate launch -m lm_eval --model hf \
-    --model_args pretrained=$1,dtype=bfloat16 \
+    --model_args pretrained=$1,dtype=bfloat16,tokenizer="pxyyy/llama3-8B-with-chat-template" \
     --tasks ai2_arc \
     --num_fewshot 25 \
     --batch_size 4 \
@@ -25,7 +25,7 @@ accelerate launch -m lm_eval --model hf \
     --apply_chat_template
 
 accelerate launch -m lm_eval --model hf \
-    --model_args pretrained=$1,dtype=bfloat16 \
+    --model_args pretrained=$1,dtype=bfloat16,tokenizer="pxyyy/llama3-8B-with-chat-template" \
     --tasks truthfulqa_mc1,truthfulqa_mc2 \
     --num_fewshot 0 \
     --batch_size 4 \

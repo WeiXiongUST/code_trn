@@ -14,7 +14,7 @@ accelerate launch -m lm_eval --model hf \
     --num_fewshot 5 \
     --batch_size 4 \
     --verbosity WARNING \
-    --apply_chat_template
+#    --apply_chat_template
 
 accelerate launch -m lm_eval --model hf \
     --model_args pretrained=$1,dtype=bfloat16,tokenizer="pxyyy/llama3-8B-with-chat-template" \
@@ -22,7 +22,7 @@ accelerate launch -m lm_eval --model hf \
     --num_fewshot 25 \
     --batch_size 4 \
     --verbosity WARNING \
-    --apply_chat_template
+#    --apply_chat_template
 
 accelerate launch -m lm_eval --model hf \
     --model_args pretrained=$1,dtype=bfloat16,tokenizer="pxyyy/llama3-8B-with-chat-template" \
@@ -30,4 +30,4 @@ accelerate launch -m lm_eval --model hf \
     --num_fewshot 0 \
     --batch_size 4 \
     --verbosity WARNING \
-    --apply_chat_template
+#    --apply_chat_template

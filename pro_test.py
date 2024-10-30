@@ -39,11 +39,13 @@ def batch_data(data_list, batch_size=8):
 def select_sample(args,sample,model,tokenizer,candidate_tokens,step_tag_id,local_rank):
     prompt = sample['prompt']
     scores_list = []
-    text_list = []
+    #text_list = []
     answers = sample['answers'][:args.num_n]
+    step_scores = []
     for ans in answers:
         single_step_score = []
         conversation = []
+        forward_conv = []
         ans_list = ans.split("ки\n")
         ans_list = [j.strip() for j in ans_list]
         for k in range(len(ans_list)):
@@ -54,16 +56,19 @@ def select_sample(args,sample,model,tokenizer,candidate_tokens,step_tag_id,local
             conversation.append({"content":text,"role":"user"})
             conversation.append({"content":"+","role":"assistant"})
          
-        input_ids = tokenizer.apply_chat_template(conversation,return_tensors="pt").to(local_rank)
-        with torch.no_grad():
-            logits = model(input_ids).logits[:,-3,candidate_tokens] #simple version, the +/- is predicted by the '-3' position
-            scores = logits.softmax(dim=-1)[:,0] # 0 means the prob of + (1 mean -)
-            single_step_score.append(scores[0])
+            input_ids = tokenizer.apply_chat_template(conversation,return_tensors="pt").to(local_rank)
+            with torch.no_grad():
+                logits = model(input_ids).logits[:,-3,candidate_tokens] #simple version, the +/- is predicted by the '-3' position
+                scores = logits.softmax(dim=-1)[:,0] # 0 means the prob of + (1 mean -)
+                #print(scores)
+                single_step_score.append(scores[0].detach().to('cpu', dtype=torch.float32).item())
             
+        step_scores.append(single_step_score)
         scores_list.append(sum(single_step_score)/len(single_step_score))
         
     idx = scores_list.index(max(scores_list))
-    return sample['label'][idx] == 1
+    sample['step_scores'] = step_scores
+    return sample['label'][idx] == 1,sample
 
 def worker(args, model, tokenizer, data, local_rank):
 
@@ -76,12 +81,13 @@ def worker(args, model, tokenizer, data, local_rank):
     minus_tag_id = tokenizer.encode('-')[-1]
     #candidate_tokens = tokenizer.encode(f"{good_token} {bad_token}")[1:] # [648, 387]
     candidate_tokens = [plus_tag_id,minus_tag_id]
-    for sample in tqdm(data):
-        sign = select_sample(args,sample,model,tokenizer,candidate_tokens,step_tag_id,local_rank)
+    for i,sample in enumerate(tqdm(data)):
+        sign,new_sample = select_sample(args,sample,model,tokenizer,candidate_tokens,step_tag_id,local_rank)
+        data[i] = new_sample
         temp_instances.append(sign)
         
     # Save results
-    return temp_instances
+    return temp_instances,data
        
 if __name__ == "__main__":
     args = parse_args()
@@ -126,7 +132,7 @@ if __name__ == "__main__":
     #     for line in f:
     #         data.append(json.loads(line))
 
-    selected_data = worker(args,model,tokenizer,data,local_rank)
+    selected_data, new_data = worker(args,model,tokenizer,data,local_rank)
     
     # Send the data to other GPUs
     world_size = int(os.getenv("WORLD_SIZE", "1"))
@@ -134,17 +140,21 @@ if __name__ == "__main__":
 
     data_to_send = {
         "data": [[selected_data[i]] for i in range(len(selected_data))],
+        "new_data": [[new_data[i]] for i in range(len(new_data))]
     }
 
     import torch.distributed as dist
 
     dist.all_gather_object(all_process_list, data_to_send)
     gathered_data = []
-
+    gathered_save_data = []
 
     for i in range(world_size):
         tmp_data = [tmp[0] for tmp in all_process_list[i]["data"]]
         gathered_data.extend(tmp_data)
+        
+        tmp_save_data = [tmp[0] for tmp in all_process_list[i]["new_data"]]
+        gathered_save_data.extend(tmp_save_data)
     
     if local_rank == 0:
     #print(len(gathered_data))
@@ -153,6 +163,11 @@ if __name__ == "__main__":
     
         with open(f"{args.output_dir}_{args.num_n}.json",'w') as f:
             json.dump(acc,f,indent=4,ensure_ascii=False)
+            
+        with open(f"{args.output_dir}_{args.num_n}_save_data.jsonl",'w') as f:
+            for entry in gathered_save_data:
+                f.write(json.dumps(entry) + "\n")
+            #json.dump(gathered_save_data,f,indent=4,ensure_ascii=False)
     # gt_data = []
     # hendrycks_math_ins = []
     # with open("../../data/MATH_test_500.jsonl","r+", encoding="utf8") as f:

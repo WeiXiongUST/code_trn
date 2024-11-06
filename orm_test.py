@@ -69,7 +69,7 @@ def select_sample(args,sample,model,tokenizer,candidate_tokens,step_tag_id,local
         scores_list.append(scores[0].detach().to('cpu', dtype=torch.float32))
         
     idx = scores_list.index(max(scores_list))
-    sample['step_scores'] = step_scores
+    sample['step_scores'] = [x.item() for x in scores_list]
     return sample['label'][idx] == 1,sample
 
 def worker(args, model, tokenizer, data, local_rank):

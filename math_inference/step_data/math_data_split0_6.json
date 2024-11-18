@@ -1,0 +1,282 @@
+[
+    {
+        "idx": 1145,
+        "solution": "To solve this problem, we need to determine the value of x, which represents the radius of the circle.\nWe know that the minor arc AB has a central angle of 70 degrees.\nThe circumference of a circle is given by the formula C = 2πr, where r is the radius.\nSince the central angle of the minor arc AB is 70 degrees, the length of the minor arc AB is (70/360) times the circumference of the circle.\nTherefore, the length of the minor arc AB is (70/360) * (2πx).\nWe are given that the length of the minor arc AB is 14, so we can set up the equation as follows:\n(70/360) * (2πx) = 14\nLet's simplify and solve for x:\n(7/36) * (2πx) = 14\n(7/36) * (2πx) = 14/1\nMultiplying both sides by 36/7 to isolate x, we get:\n2πx = 36\nDividing both sides by 2π, we get:\nx = 36 / (2π)\nSimplifying further, we get:\nx = 18 / π\nTherefore, the value of x is 18 / π.\nThe answer is: 18",
+        "type": "MATH_SV",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\nStep 20: The value of x is 72. The answer is: 72 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\n",
+        "completions": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "idx": 1145,
+        "solution": "To solve this problem, we need to determine the value of x, which represents the radius of the circle.\nWe know that the minor arc AB has a central angle of 70 degrees.\nThe circumference of a circle is given by the formula C = 2πr, where r is the radius.\nSince the central angle of the minor arc AB is 70 degrees, the length of the minor arc AB is (70/360) times the circumference of the circle.\nTherefore, the length of the minor arc AB is (70/360) * (2πx).\nWe are given that the length of the minor arc AB is 14, so we can set up the equation as follows:\n(70/360) * (2πx) = 14\nLet's simplify and solve for x:\n(7/36) * (2πx) = 14\n(7/36) * (2πx) = 14/1\nMultiplying both sides by 36/7 to isolate x, we get:\n2πx = 36\nDividing both sides by 2π, we get:\nx = 36 / (2π)\nSimplifying further, we get:\nx = 18 / π\nTherefore, the value of x is 18 / π.\nThe answer is: 18",
+        "type": "MATH_SV",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\nStep 20: The value of x is 72. The answer is: 72 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\n",
+        "completions": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "idx": 1145,
+        "solution": "To solve this problem, we need to determine the value of x, which represents the radius of the circle.\nWe know that the minor arc AB has a central angle of 70 degrees.\nThe circumference of a circle is given by the formula C = 2πr, where r is the radius.\nSince the central angle of the minor arc AB is 70 degrees, the length of the minor arc AB is (70/360) times the circumference of the circle.\nTherefore, the length of the minor arc AB is (70/360) * (2πx).\nWe are given that the length of the minor arc AB is 14, so we can set up the equation as follows:\n(70/360) * (2πx) = 14\nLet's simplify and solve for x:\n(7/36) * (2πx) = 14\n(7/36) * (2πx) = 14/1\nMultiplying both sides by 36/7 to isolate x, we get:\n2πx = 36\nDividing both sides by 2π, we get:\nx = 36 / (2π)\nSimplifying further, we get:\nx = 18 / π\nTherefore, the value of x is 18 / π.\nThe answer is: 18",
+        "type": "MATH_SV",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\nStep 20: The value of x is 72. The answer is: 72 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\n",
+        "completions": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "idx": 1145,
+        "solution": "To solve this problem, we need to determine the value of x, which represents the radius of the circle.\nWe know that the minor arc AB has a central angle of 70 degrees.\nThe circumference of a circle is given by the formula C = 2πr, where r is the radius.\nSince the central angle of the minor arc AB is 70 degrees, the length of the minor arc AB is (70/360) times the circumference of the circle.\nTherefore, the length of the minor arc AB is (70/360) * (2πx).\nWe are given that the length of the minor arc AB is 14, so we can set up the equation as follows:\n(70/360) * (2πx) = 14\nLet's simplify and solve for x:\n(7/36) * (2πx) = 14\n(7/36) * (2πx) = 14/1\nMultiplying both sides by 36/7 to isolate x, we get:\n2πx = 36\nDividing both sides by 2π, we get:\nx = 36 / (2π)\nSimplifying further, we get:\nx = 18 / π\nTherefore, the value of x is 18 / π.\nThe answer is: 18",
+        "type": "MATH_SV",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\nStep 20: The value of x is 72. The answer is: 72 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\n",
+        "completions": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "idx": 1145,
+        "solution": "To solve this problem, we need to determine the value of x, which represents the radius of the circle.\nWe know that the minor arc AB has a central angle of 70 degrees.\nThe circumference of a circle is given by the formula C = 2πr, where r is the radius.\nSince the central angle of the minor arc AB is 70 degrees, the length of the minor arc AB is (70/360) times the circumference of the circle.\nTherefore, the length of the minor arc AB is (70/360) * (2πx).\nWe are given that the length of the minor arc AB is 14, so we can set up the equation as follows:\n(70/360) * (2πx) = 14\nLet's simplify and solve for x:\n(7/36) * (2πx) = 14\n(7/36) * (2πx) = 14/1\nMultiplying both sides by 36/7 to isolate x, we get:\n2πx = 36\nDividing both sides by 2π, we get:\nx = 36 / (2π)\nSimplifying further, we get:\nx = 18 / π\nTherefore, the value of x is 18 / π.\nThe answer is: 18",
+        "type": "MATH_SV",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\nStep 20: The value of x is 72. The answer is: 72 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\n",
+        "completions": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "idx": 1145,
+        "solution": "To solve this problem, we need to determine the value of x, which represents the radius of the circle.\nWe know that the minor arc AB has a central angle of 70 degrees.\nThe circumference of a circle is given by the formula C = 2πr, where r is the radius.\nSince the central angle of the minor arc AB is 70 degrees, the length of the minor arc AB is (70/360) times the circumference of the circle.\nTherefore, the length of the minor arc AB is (70/360) * (2πx).\nWe are given that the length of the minor arc AB is 14, so we can set up the equation as follows:\n(70/360) * (2πx) = 14\nLet's simplify and solve for x:\n(7/36) * (2πx) = 14\n(7/36) * (2πx) = 14/1\nMultiplying both sides by 36/7 to isolate x, we get:\n2πx = 36\nDividing both sides by 2π, we get:\nx = 36 / (2π)\nSimplifying further, we get:\nx = 18 / π\nTherefore, the value of x is 18 / π.\nThe answer is: 18",
+        "type": "MATH_SV",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\nStep 20: The value of x is 72. The answer is: 72 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\n",
+        "completions": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "idx": 1145,
+        "solution": "To solve this problem, we need to determine the value of x, which represents the radius of the circle.\nWe know that the minor arc AB has a central angle of 70 degrees.\nThe circumference of a circle is given by the formula C = 2πr, where r is the radius.\nSince the central angle of the minor arc AB is 70 degrees, the length of the minor arc AB is (70/360) times the circumference of the circle.\nTherefore, the length of the minor arc AB is (70/360) * (2πx).\nWe are given that the length of the minor arc AB is 14, so we can set up the equation as follows:\n(70/360) * (2πx) = 14\nLet's simplify and solve for x:\n(7/36) * (2πx) = 14\n(7/36) * (2πx) = 14/1\nMultiplying both sides by 36/7 to isolate x, we get:\n2πx = 36\nDividing both sides by 2π, we get:\nx = 36 / (2π)\nSimplifying further, we get:\nx = 18 / π\nTherefore, the value of x is 18 / π.\nThe answer is: 18",
+        "type": "MATH_SV",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\nStep 20: The value of x is 72. The answer is: 72 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet $A,$ $B,$ and $C$ be points on a circle of radius X If $\\angle ACB = 70^\\circ,$ what is the circumference of the minor arc ${AB}$? Express your answer in terms of $\\pi. The answer is 14. What is the value of unknown variable X?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: To solve this problem, we need to determine the value of x, which represents the radius of the circle. ки\nStep 2: We know that the angle ACB is 70 degrees. ки\nStep 3: The circumference of a minor arc is equal to the arc length of the arc being measured, which can be found using the formula: ки\nStep 4: Arc length = arc angle/360 * circumference of the circle ки\nStep 5: Let's set up the equation: ки\nStep 6: Arc length of arc AB = (70/360) * circumference of the circle ки\nStep 7: We can also express the circumference of the circle in terms of the radius: ки\nStep 8: Circumference of the circle = 2 * π * radius ки\nStep 9: Therefore, the equation becomes: ки\nStep 10: Arc length of arc AB = (70/360) * 2 * π * radius ки\nStep 11: Given that the arc length of arc AB is 14, we can substitute that value into the equation: ки\nStep 12: 14 = (70/360) * 2 * π * radius ки\nStep 13: Let's simplify and solve for x: ки\nStep 14: 14 = (70/360) * 2π * x ки\nStep 15: To isolate x, we divide both sides of the equation by (70/360) * 2π: ки\nStep 16: Rodin 2π * x = 2π * x = (360/70) * 14 ки\nStep 17: x = (360/70) * 14 ки\nStep 18: x = (360/5) ки\nStep 19: x = 72 ки\nStep 20: The value of x is 72. The answer is: 72 ки",
+        "completions": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "idx": 1146,
+        "solution": "The non-filler weight in the burger is the difference between the total weight of the burger and the weight of the fillers. \n\nThe total weight of the burger is given as 120 grams and the weight of the fillers is 30 grams. \n\nSo, the non-filler weight in the burger is: \n\nNon-filler weight = Total weight of the burger - Weight of the fillers = 120 grams - 30 grams = 90 grams.\n\nTo find the non-filler weight percentage, we need to express the non-filler weight as a percentage of the total weight of the burger.\n\nNon-filler weight percentage = (Non-filler weight / Total weight of the burger) * 100.\n\nSubstituting the values, we get:\n\nNon-filler weight percentage = (90 grams / 120 grams) * 100 = 0.75 * 100 = 75%.\n\nTherefore, the non-filler weight percentage in the burger is $\\boxed{75\\%}$. The answer is: 75",
+        "type": "gpt-3.5-turbo",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: The non-filler weight percentage in the burger can be calculated by subtracting the weight of the fillers (30 grams) from the total weight of the burger (120 grams), and then dividing that weight by the total weight and multiplying by 100%. ки\nStep 2: So, the non-filler weight in the burger is 120 grams - 30 grams = 90 grams. ки\nStep 3: To find the percentage, we divide the non-filler weight by the total weight and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: The non-filler weight percentage in the burger can be calculated by subtracting the weight of the fillers (30 grams) from the total weight of the burger (120 grams), and then dividing that weight by the total weight and multiplying by 100%. ки\n",
+        "completions": [
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75%. The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90/120 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90/120 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75%. ки\nStep 3: Therefore, the non-filler weight percentage in the burger is 75%. The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage in the burger is (120 grams - 30 grams) / 120 grams * 100% = 90/120 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage in the burger is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75% ки\nStep 3: Therefore, the non-filler weight percentage in the burger is 75%. The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75% ки\nStep 3: Therefore, the non-filler weight percentage in the burger is 75%. The answer is: 75 ки\n",
+            "Step 2: So, the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 75% ки\nStep 3: Therefore, the non-filler weight percentage in the burger is 75%. The answer is: 75 ки\n",
+            "Step 2: So the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75% The answer is: 75 ки\n",
+            "Step 2: So the non-filler weight percentage is (120 grams - 30 grams) / 120 grams * 100% = 90 grams / 120 grams * 100% = 0.75 * 100% = 75%. The answer is: 75 ки\n"
+        ]
+    },
+    {
+        "idx": 1146,
+        "solution": "The non-filler weight in the burger is the difference between the total weight of the burger and the weight of the fillers. \n\nThe total weight of the burger is given as 120 grams and the weight of the fillers is 30 grams. \n\nSo, the non-filler weight in the burger is: \n\nNon-filler weight = Total weight of the burger - Weight of the fillers = 120 grams - 30 grams = 90 grams.\n\nTo find the non-filler weight percentage, we need to express the non-filler weight as a percentage of the total weight of the burger.\n\nNon-filler weight percentage = (Non-filler weight / Total weight of the burger) * 100.\n\nSubstituting the values, we get:\n\nNon-filler weight percentage = (90 grams / 120 grams) * 100 = 0.75 * 100 = 75%.\n\nTherefore, the non-filler weight percentage in the burger is $\\boxed{75\\%}$. The answer is: 75",
+        "type": "gpt-3.5-turbo",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: The non-filler weight percentage in the burger can be calculated by subtracting the weight of the fillers (30 grams) from the total weight of the burger (120 grams), and then dividing that weight by the total weight and multiplying by 100%. ки\nStep 2: So, the non-filler weight in the burger is 120 grams - 30 grams = 90 grams. ки\nStep 3: To find the percentage, we divide the non-filler weight by the total weight and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: The non-filler weight percentage in the burger can be calculated by subtracting the weight of the fillers (30 grams) from the total weight of the burger (120 grams), and then dividing that weight by the total weight and multiplying by 100%. ки\nStep 2: So, the non-filler weight in the burger is 120 grams - 30 grams = 90 grams. ки\n",
+        "completions": [
+            "Step 3: To find the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90/120) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90/120) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90/120) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90/120) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: The non-filler weight percentage is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: The non-filler weight percentage is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: The non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: The non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: 90 grams / 120 grams * 100% = 75% ки\nStep 5: Therefore, the non-filler weight percentage in the burger is 75%. The answer is: 75 ки\n",
+            "Step 3: To calculate the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90/120) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To calculate the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90/120) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To calculate the percentage, we divide the non-filler weight (90 grams) by the total weight (120 grams) and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90/120) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight by the total weight and multiply by 100%. ки\nStep 4: So, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 3: To find the percentage, we divide the non-filler weight by the total weight and multiply by 100%: 90 grams / 120 grams * 100% = 75%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is 75%. The answer is: 75 ки\n",
+            "Step 3: And the non-filler weight percentage is (90 grams / 120 grams) * 100% = 75%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is 75%. The answer is: 75 ки\n"
+        ]
+    },
+    {
+        "idx": 1146,
+        "solution": "The non-filler weight in the burger is the difference between the total weight of the burger and the weight of the fillers. \n\nThe total weight of the burger is given as 120 grams and the weight of the fillers is 30 grams. \n\nSo, the non-filler weight in the burger is: \n\nNon-filler weight = Total weight of the burger - Weight of the fillers = 120 grams - 30 grams = 90 grams.\n\nTo find the non-filler weight percentage, we need to express the non-filler weight as a percentage of the total weight of the burger.\n\nNon-filler weight percentage = (Non-filler weight / Total weight of the burger) * 100.\n\nSubstituting the values, we get:\n\nNon-filler weight percentage = (90 grams / 120 grams) * 100 = 0.75 * 100 = 75%.\n\nTherefore, the non-filler weight percentage in the burger is $\\boxed{75\\%}$. The answer is: 75",
+        "type": "gpt-3.5-turbo",
+        "my_solu": [
+            "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: The non-filler weight percentage in the burger can be calculated by subtracting the weight of the fillers (30 grams) from the total weight of the burger (120 grams), and then dividing that weight by the total weight and multiplying by 100%. ки\nStep 2: So, the non-filler weight in the burger is 120 grams - 30 grams = 90 grams. ки\nStep 3: To find the percentage, we divide the non-filler weight by the total weight and multiply by 100%. ки\nStep 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки"
+        ],
+        "prompt": "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\n",
+        "new_prompt": "<bos><start_of_turn>user\nLet's say Ricky C's is selling burgers that each weigh 120 grams. If the fillers in the burger weigh 30 grams, what is the non-filler weight percentage in the burger?\nPlease reason step by step.<end_of_turn>\n<start_of_turn>model\nStep 1: The non-filler weight percentage in the burger can be calculated by subtracting the weight of the fillers (30 grams) from the total weight of the burger (120 grams), and then dividing that weight by the total weight and multiplying by 100%. ки\nStep 2: So, the non-filler weight in the burger is 120 grams - 30 grams = 90 grams. ки\nStep 3: To find the percentage, we divide the non-filler weight by the total weight and multiply by 100%. ки\n",
+        "completions": [
+            "Step 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: Therefore, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: So, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: So, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: So, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: So, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: So, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: So, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: Therefore, the non-filler weight percentage in the burger is 90 grams / 120 grams * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: The percentage is (90 grams / 120 grams) * 100% = 75% The answer is: 75 ки\n",
+            "Step 4: So, the non-filler weight percentage is (90 grams / 120 grams) * 100% = 75%. The answer is: 75 ки\n",
+            "Step 4: So, the non-filler weight percentage in the burger is (90 grams / 120 grams) * 100% = 75% The answer is: 75 ки\n"
+        ]
+    }
+]

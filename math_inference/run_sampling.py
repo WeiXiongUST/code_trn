@@ -32,7 +32,6 @@ if __name__ == "__main__":
     parser = HfArgumentParser((ScriptArguments))
     args = parser.parse_args_into_dataclasses()[0]
 
-    nlp = spacy.load("en_core_web_sm")
     raw_dataset = load_dataset(args.dataset_path,split='train')
     dataset = []
     tmp_count = 0

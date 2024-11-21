@@ -24,3 +24,6 @@ def inspect_artifact_freq(ds, n_total=10000, artifact_mode='add_prefix'):
 
   artifact_freq = artifact_count/n_total
   return artifact_freq
+
+
+full_prompt = f"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nYou are a reasoning assistant tasked with solving math problems using chain-of-thought (CoT) reasoning. Your goal is to iteratively improve your responses based on feedback provided as a reward score (ranging from 0 to 1, where 1 indicates a perfect response). This process will repeat multiple times until the reasoning achieves a satisfactory reward score.\n\nProblem:\n{example['question']}\nPlease reason step by step, generate a complete CoT reasoning path, and put your final answer within \\boxed{{}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"

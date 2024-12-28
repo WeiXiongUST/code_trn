@@ -1,4 +1,5 @@
-base_model: meta-llama/Meta-Llama-3-8B
+base_model: selfcorrexp2/llama3_openmath_1m_ep1
+#meta-llama/Meta-Llama-3-8B-Instruct
 model_type: AutoModelForCausalLM
 tokenizer_type: AutoTokenizer
 
@@ -7,19 +8,22 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: 1231czx/rlhflow_mixture_with_math_del_system
+  - path: selfcorrexp2/llama3_sft_balanced_rr60k
     conversation: llama3
     type: sharegpt
     split: "train"
     train_on_split: "train"
-
 warmup_ratio: 0.05
 val_set_size: 0.0
-output_dir: ./pm_models/llama3-8b_bs128_lr2e-5_rlhflow_w_math_no_system
+output_dir: ./llama3_old_format_balanced
+
+#warmup_steps: 4
+###val_set_size: 0.0
+##output_dir: ./pm_models/llama3-8b-it_bs128_lr5e-6
 #wandb_project: preference-models
 #wandb_entity: domain-generalization
 wandb_watch:
-wandb_name: "llama-8b-bs128_lr2e-5_rlhflow_w_math_no_system"
+wandb_name: "llama-8b-it_data-preference_mix3_bs128_lr5e-6"
 wandb_log_model:
 
 train_on_inputs: false
@@ -27,8 +31,6 @@ train_on_inputs: false
 save_safetensors: true
 #noisy_embedding_alpha: 10.0 # default for sharegpt type
 dataset_prepared_path: ~/data/preference-models/last_run_prepared
-
-
 dataset_processes: 48
 #torch_compile: true
 sequence_len: 8192
@@ -50,7 +52,7 @@ lora_model_dir:
 gradient_checkpointing: True
 
 #warmup_ratio: 0.1
-gradient_accumulation_steps: 16
+gradient_accumulation_steps: 4
 micro_batch_size: 1
 num_epochs: 3
 #max_steps: 10
@@ -58,11 +60,10 @@ num_epochs: 3
 optimizer: paged_adamw_32bit
 #lr_scheduler: constant_with_warmup
 lr_scheduler: cosine
-learning_rate: 2.0e-5
+learning_rate: 2.0e-6
 
 weight_decay: 0.0
 max_grad_norm: 1.0
-
 
 group_by_length: false
 bf16: auto
@@ -81,7 +82,7 @@ eval_table_size:
 eval_table_max_new_tokens:
 #save_steps: 100
 save_strategy: "epoch"
-save_total_limit: 4
+save_total_limit: 3
 #save_safetensors: false
 debug:
 
@@ -93,4 +94,3 @@ fsdp:
 fsdp_config:
 special_tokens:
         pad_token: <|end_of_text|>
-

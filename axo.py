@@ -14,7 +14,7 @@
   def modify_list(example):
         lst = example['labels']
         
-        sequence = [4815, 3957, 856, 1455]
+        sequence = [4815, 3957, 856, 1455] # \n\nIs my most ...
         #sequence = [4800, 358, 690, 8881, 389]
         def find_sequence_start(lst_tmp, sequence):
             for i in range(len(lst_tmp) - len(sequence) + 1):
@@ -22,13 +22,17 @@
                     return i
             return -1
         start_index = find_sequence_start(lst, sequence)
-       # if is_sublist([320, 9642, 477, 2360, 12106, 7566, 13], lst):
-       #     return example
+        # [320, 9642, 477, 2360, 12106, 7566, 13], ' (Yes or No)? Yes.'
+
+        #if is_sublist([320, 9642, 477, 2360, 12106, 7566, 13], lst):
+            #return example
         # Update elements prior to the sequence
         if start_index != -1:
             lst[:start_index] = [-100] * start_index
         else:
             assert 1 == 0
+        # [1102, 5084, 430, 279, 3766, 4320, 574, 3604, 4495, 13] " It seems that the previous answer was actually correct."
+
         if is_sublist([1102, 5084, 430, 279, 3766, 4320, 574, 3604, 4495, 13], example['labels']):
             lst = set_minus_100(lst)
         example['labels'] = lst

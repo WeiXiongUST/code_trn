@@ -47,7 +47,7 @@ def select_sample(args,sample,model,tokenizer,candidate_tokens,local_rank):
     print(input_ids)
     #input_ids = tokenizer.apply_chat_template(conversation,return_tensors="pt").to(local_rank)
     with torch.no_grad():
-        logits = model(input_ids).logits[:,-2,candidate_tokens] #simple version for llama3.1-instruct, the +/- is predicted by the '-3' position
+        logits = model(input_ids).logits[:,-3,candidate_tokens] #simple version for llama3.1-instruct, the +/- is predicted by the '-3' position
         scores = logits.softmax(dim=-1)[:,0] # 0 means the prob of + (1 mean -)
 
     scores_list.append(scores[0].detach().to('cpu', dtype=torch.float32))

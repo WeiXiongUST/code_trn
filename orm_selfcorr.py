@@ -14,10 +14,10 @@ import re
      
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--reward_name_or_path", type=str, default='orm-balance/checkpoint-213')  # model path
-    parser.add_argument("--dataset", type=str, default='selfcorrexp/llama3_it_8b_tmp10_n3')  # data path
-    parser.add_argument("--output_dir", type=str, default="orm-balance-llama3-tmp10-n3")  # output dir
-    parser.add_argument("--num_n", type=int, default=1024)  # number of N for each question
+    parser.add_argument("--reward_name_or_path", type=str, default='HanningZhang/Llama3-sft-less-corr-rr60k-3ep')  # model path
+    parser.add_argument("--dataset", type=str, default='selfcorrexp2/llama3_sft_less_corr_training_on_corr_scaling_exp')  # data path
+    parser.add_argument("--output_dir", type=str, default="orm-less-corr-llama3-scaling")  # output dir
+    parser.add_argument("--num_n", type=int, default=1)  # number of N for each question
     parser.add_argument("--model_type",type=str,choices=["Mistral","Deepseek"],default='Mistral')
     return parser.parse_args()
 
@@ -36,15 +36,16 @@ def batch_data(data_list, batch_size=8):
 def select_sample(args,sample,model,tokenizer,candidate_tokens,local_rank):
     prompt = sample['prompt']
     scores_list = []
-    answers = sample['messages']
+    #answers = sample['messages']
     step_scores = []
-    conversation = []
-    conversation.append({"content":answers[0]['content'] + " " + answers[1]['content'],"role":"user"})
-    conversation.append({"content":"+","role":"assistant"})
-         
-    input_ids = tokenizer.apply_chat_template(conversation,return_tensors="pt").to(local_rank)
+    #conversation = [
+    #conversation.append({"content":answers[0]['content'] + " " + answers[1]['content'],"role":"user"})
+    #conversation.append({"content":"+","role":"assistant"})
+    txt = sample['prompt'].split("<|eot_id|><|start_header_id|>user<|end_header_id|>")
+    input_ids = tokenizer.encode("txt", add_special_tokens=False, return_tensors="pt").to(local_rank)
+    #input_ids = tokenizer.apply_chat_template(conversation,return_tensors="pt").to(local_rank)
     with torch.no_grad():
-        logits = model(input_ids).logits[:,-3,candidate_tokens] #simple version for llama3.1-instruct, the +/- is predicted by the '-3' position
+        logits = model(input_ids).logits[:,-2,candidate_tokens] #simple version for llama3.1-instruct, the +/- is predicted by the '-3' position
         scores = logits.softmax(dim=-1)[:,0] # 0 means the prob of + (1 mean -)
 
     scores_list.append(scores[0].detach().to('cpu', dtype=torch.float32))
@@ -57,8 +58,8 @@ def select_sample(args,sample,model,tokenizer,candidate_tokens,local_rank):
 def worker(args, model, tokenizer, data, local_rank):
 
     temp_instances = []
-    plus_tag_id = tokenizer.encode('+')[-1]
-    minus_tag_id = tokenizer.encode('-')[-1]
+    plus_tag_id = tokenizer.encode(' Yes')[-1]
+    minus_tag_id = tokenizer.encode(' No')[-1]
     candidate_tokens = [plus_tag_id,minus_tag_id]
     for i,sample in enumerate(tqdm(data)):
         sign,new_sample = select_sample(args,sample,model,tokenizer,candidate_tokens,local_rank)
@@ -74,7 +75,7 @@ if __name__ == "__main__":
     accelerator = Accelerator()
     world_size = int(os.getenv("WORLD_SIZE", "1"))
     #print(world_size)
-    ds = load_dataset(args.dataset,split="train")
+    ds = load_dataset(args.dataset,split="train").select(range(5000))
     local_rank = Accelerator().local_process_index
     print("---------------")
     print("begin to load reward model.")
@@ -90,9 +91,9 @@ if __name__ == "__main__":
             print("Failed to load the reward model. Retrying....")
             time.sleep(2)
 
-    tokenizer.padding_side = "right"
-    tokenizer.pad_token = tokenizer.eos_token
-    model.config.pad_token_id = model.config.eos_token_id
+    #tokenizer.padding_side = "right"
+    #tokenizer.pad_token = tokenizer.eos_token
+    #model.config.pad_token_id = model.config.eos_token_id
 
     data = []
     data_size = len(ds["prompt"])

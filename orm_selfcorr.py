@@ -41,8 +41,10 @@ def select_sample(args,sample,model,tokenizer,candidate_tokens,local_rank):
     #conversation = [
     #conversation.append({"content":answers[0]['content'] + " " + answers[1]['content'],"role":"user"})
     #conversation.append({"content":"+","role":"assistant"})
-    txt = sample['prompt'].split("<|eot_id|><|start_header_id|>user<|end_header_id|>")[0]
+    txt = sample['prompt'].split("Is my most recent final answer correct (Yes or No)?")[0] + "Is my most recent final answer correct (Yes or No)? Yes."
+    print(txt)
     input_ids = tokenizer.encode(txt, add_special_tokens=False, return_tensors="pt").to(local_rank)
+    print(input_ids)
     #input_ids = tokenizer.apply_chat_template(conversation,return_tensors="pt").to(local_rank)
     with torch.no_grad():
         logits = model(input_ids).logits[:,-2,candidate_tokens] #simple version for llama3.1-instruct, the +/- is predicted by the '-3' position
@@ -75,7 +77,7 @@ if __name__ == "__main__":
     accelerator = Accelerator()
     world_size = int(os.getenv("WORLD_SIZE", "1"))
     #print(world_size)
-    ds = load_dataset(args.dataset,split="train").select(range(5000))
+    ds = load_dataset(args.dataset,split="train").select(range(240))
     local_rank = Accelerator().local_process_index
     print("---------------")
     print("begin to load reward model.")

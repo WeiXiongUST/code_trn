@@ -14,8 +14,8 @@ import re
      
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--reward_name_or_path", type=str, default='HanningZhang/Llama3-sft-less-corr-rr60k-3ep')  # model path
-    parser.add_argument("--dataset", type=str, default='selfcorrexp2/llama3_sft_less_corr_training_on_corr_scaling_exp')  # data path
+    parser.add_argument("--reward_name_or_path", type=str, default='selfcorrexp2/llama3_sft_balanced_rr60k_train_on_corr_ep3')  # model path
+    parser.add_argument("--dataset", type=str, default='tmpmodelsave/llamasft_math_ift_balanced_moredata_100tmp10_vllmexp')  # data path
     parser.add_argument("--output_dir", type=str, default="orm-less-corr-llama3-scaling")  # output dir
     parser.add_argument("--num_n", type=int, default=1)  # number of N for each question
     parser.add_argument("--model_type",type=str,choices=["Mistral","Deepseek"],default='Mistral')

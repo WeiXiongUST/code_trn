@@ -1,4 +1,4 @@
-base_model: Qwen/Qwen2.5-14B
+base_model: Qwen/Qwen2.5-7B
 trust_remote_code: false
 
 load_in_8bit: false
@@ -7,11 +7,11 @@ strict: false
 
 chat_template: qwen_25
 datasets:
-  - path: weqweasdas/ace_processed
+  - path: selfcorrexp2/llama3_prompt_first_cort_math_1_regular_processed
     type: chat_template
     field_messages: conversations
-    message_field_role: from
-    message_field_content: value
+    message_field_role: role
+    message_field_content: content
     roles:
       user: ["human", "user"]
       assistant: ["gpt", "assistant", "ai"]
@@ -26,23 +26,23 @@ sample_packing: true
 eval_sample_packing: true
 pad_to_sequence_len: true
 
-wandb_project: qwen-im-end
-wandb_entity: axolotl-ai
+wandb_project: huggingface
+wandb_entity: zzzzzaa
 wandb_watch:
 wandb_name: qwen-1.5b-metamath-100k
 wandb_log_model:
 
 gradient_accumulation_steps: 4
-micro_batch_size: 4
+micro_batch_size: 1
 num_epochs: 3
 optimizer: paged_adamw_32bit
 lr_scheduler: cosine
-learning_rate: 2e-5
+learning_rate: 2e-6
 
 train_on_inputs: false
 group_by_length: false
 bf16: auto
-fp16:
+fp16: false
 tf32: true
 
 gradient_checkpointing: true

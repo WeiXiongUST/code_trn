@@ -1563,13 +1563,13 @@ def strip_string(string):
     return string
 
 def compute_score(solution_str, ground_truth):
-    
+    dataset_name = 'math'
     try:
         extracted_model_answer = extract_answer(solution_str, 'math', use_last_number=True)
     except:
         extracted_model_answer = None
         
-    if extracted_model_answer is None or ground_truth is None:
+    if extracted_model_answer is None:
         return -1.0
     if 'boxed' not in solution_str:
         return -1.0

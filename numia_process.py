@@ -1,5 +1,5 @@
 """
-Preprocess the GSM8k dataset to parquet format
+Preprocess the Numia dataset to parquet format
 """
 
 import os
@@ -22,9 +22,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    # 'lighteval/MATH' is no longer available on huggingface.
-    # Use mirror repo: DigitalLearningGmbH/MATH-lighteval
-    data_source = 'dsrtrain/numia_prompt'
+    data_source = 'RLHFlow/numia_prompt_ppo'
     print(f"Loading the {data_source} dataset from huggingface...", flush=True)
     dataset = datasets.load_dataset(data_source, trust_remote_code=True)
 
@@ -41,9 +39,8 @@ if __name__ == '__main__':
 
             question = question + ' ' + instruction_following
 
-            #answer = example.pop('solution')
-            #solution = extract_solution(answer)
-
+            # We set the data_source as MATH so that we can use the reward model designed for MATH dataset
+                
             data = {
                 "data_source": 'DigitalLearningGmbH/MATH-lighteval',
                 "prompt": [{

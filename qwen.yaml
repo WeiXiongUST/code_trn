@@ -7,7 +7,7 @@ strict: false
 
 chat_template: qwen_25
 datasets:
-  - path: dsrtrain/long_cot_qwq_math_prompt_15k
+  - path: dsrtrain/raft_iter1_sft
     type: chat_template
     field_messages: conversations
     message_field_role: role
@@ -19,7 +19,7 @@ datasets:
 
 dataset_prepared_path:
 val_set_size: 0.0
-output_dir: ./outputs/qwen_qwq_20k
+output_dir: ./outputs/qwen_test
 
 sequence_len: 8192
 sample_packing: true
@@ -29,12 +29,12 @@ pad_to_sequence_len: true
 wandb_project: huggingface
 wandb_entity: zzzzzaa
 wandb_watch:
-wandb_name: qwen_qwq_20k
+wandb_name: qwen_test
 wandb_log_model:
 
 gradient_accumulation_steps: 4
 micro_batch_size: 1
-num_epochs: 3
+num_epochs: 2
 optimizer: paged_adamw_32bit
 lr_scheduler: cosine
 learning_rate: 1e-5
